@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A15298C267C84C600EB33EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15298B267C84C600EB33EC /* main.swift */; };
+		0A152993267C857100EB33EC /* compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0A152992267C857100EB33EC /* compute.metal */; };
+		0AD422C6268552BE00DDEFA5 /* MetalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD422C5268552BE00DDEFA5 /* MetalUtils.swift */; };
+		0AD422CB2685D65700DDEFA5 /* ParallelReduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD422CA2685D65700DDEFA5 /* ParallelReduction.swift */; };
+		0AD422CD2685D66600DDEFA5 /* ParallelReduction.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0AD422CC2685D66600DDEFA5 /* ParallelReduction.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		0A152988267C84C600EB33EC /* GPUComputeTesting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GPUComputeTesting; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A15298B267C84C600EB33EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A152992267C857100EB33EC /* compute.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = compute.metal; sourceTree = "<group>"; };
+		0AD422C5268552BE00DDEFA5 /* MetalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUtils.swift; sourceTree = "<group>"; };
+		0AD422CA2685D65700DDEFA5 /* ParallelReduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelReduction.swift; sourceTree = "<group>"; };
+		0AD422CC2685D66600DDEFA5 /* ParallelReduction.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ParallelReduction.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,37 @@
 		0A15298A267C84C600EB33EC /* GPUComputeTesting */ = {
 			isa = PBXGroup;
 			children = (
+				0AD422CE268FFDCA00DDEFA5 /* Array Sorting */,
+				0AD422C92685D63700DDEFA5 /* Parallel Reduction */,
+				0AD422C42685513C00DDEFA5 /* Compute */,
 				0A15298B267C84C600EB33EC /* main.swift */,
+				0A152992267C857100EB33EC /* compute.metal */,
 			);
 			path = GPUComputeTesting;
+			sourceTree = "<group>";
+		};
+		0AD422C42685513C00DDEFA5 /* Compute */ = {
+			isa = PBXGroup;
+			children = (
+				0AD422C5268552BE00DDEFA5 /* MetalUtils.swift */,
+			);
+			path = Compute;
+			sourceTree = "<group>";
+		};
+		0AD422C92685D63700DDEFA5 /* Parallel Reduction */ = {
+			isa = PBXGroup;
+			children = (
+				0AD422CA2685D65700DDEFA5 /* ParallelReduction.swift */,
+				0AD422CC2685D66600DDEFA5 /* ParallelReduction.metal */,
+			);
+			path = "Parallel Reduction";
+			sourceTree = "<group>";
+		};
+		0AD422CE268FFDCA00DDEFA5 /* Array Sorting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Array Sorting";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD422CB2685D65700DDEFA5 /* ParallelReduction.swift in Sources */,
 				0A15298C267C84C600EB33EC /* main.swift in Sources */,
+				0A152993267C857100EB33EC /* compute.metal in Sources */,
+				0AD422CD2685D66600DDEFA5 /* ParallelReduction.metal in Sources */,
+				0AD422C6268552BE00DDEFA5 /* MetalUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
